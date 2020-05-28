@@ -1,0 +1,161 @@
+/*******************************************************************
+*** File Name : stylesheet.css
+*** Designer : 増田　毅
+*** Date : 2018.07.05
+*** Function : 全てのページのスタイルを変更する
+*******************************************************************/
+:root{
+
+  --color1:#20232a;
+  --color2:#a01d26;
+  --color3:#acbebe;
+  --color4:#f4f4ef;
+}
+
+@media all and (max-width: 1000px){
+    footer{display: none;}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+header {
+  position: fixed;
+  background-color: var(--color2);
+  color: var(--color3);
+  height: auto;
+  width: 100%;
+  margin: 0px;
+  padding: 3px;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.logo{
+    float: left;
+}
+
+.container {
+  background-color: var(--color4);
+  opacity: 1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  display: inline-block;
+  min-height:10%;
+  min-width:10%;
+  max-height:80%;
+  max-width:80%;
+  overflow: auto;
+}
+
+.container input{
+  font-size: 15px;
+}
+
+.container2 {
+  padding-bottom: 0;
+}
+
+.save{
+  width:100%;
+  /*overflow: hidden;*/
+  padding: 0 25%;
+}
+.save .login{
+  float:left;
+  width: 50%;
+
+}
+
+.login {
+  line-height: 30px;
+  padding: 0 25px;
+    border:1px solid;
+    border-radius: 10px;
+    border-color: var(--color3);
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: white;
+
+}
+.login:hover{
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+.container a{
+
+  padding: 8px 16px;
+  border:1px solid;
+  border-radius: 10px;
+  border-color: var(--color3);
+  font-size: 15px;
+  transition: all 0.5s;
+  background-color: white;
+}
+.container a:hover{
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.header-right a {
+  line-height: 70px;
+  padding: 0 25px;
+  color:#acbebe;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-left {
+  float: left;
+  margin-left: 5%;
+}
+
+.header-right {
+  float: right;
+  margin-right: 5%;
+}
+
+.container3 {
+  bottom: 0px;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  background-color: var(--color3);
+  height: 8%;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer p {
+  color: black;
+  font-size: 12px;
+  margin: auto;
+}
+
+.footer-right{
+  font-size:8px;
+  text-align: right;
+  margin-right: 1%;
+  margin-bottom: 3%;
+  opacity: 0.5;
+}
